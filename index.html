@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./build/img/logo-icon-compr.png" type="image/x-icon">
     <link rel="stylesheet" href="./build/css/style.min.css">
-    <title>Document</title>
+    <title>CodeB</title>
 </head>
 <body>
     <div class="loader">
@@ -16,7 +17,8 @@
     <header>
         <div class="mainMenu">
             <div class="mainMenuPrtLeft">
-                <div class="mainMenuIcon"></div>
+                <a href="/index.html" class="mainMenuIcon"></a>
+                <p class="TeamName">CodeBreakers</p>
                 <div class="menuLogoOpen"></div>
             </div>
             <div class="mainMenuPrtRight">
@@ -25,22 +27,49 @@
                 <p class="translate">RU</p>
             </div>
         </div>
-        <div class="bg-hcombs"></div>
-        <div class="bgFrst"></div>
-        <div class="bgScnd"></div>
-        <div class="bgFrd"></div>
-        <div class="bgFft"></div>
-        <div class="bg-dark"></div>
-            <div class="header-content">
-                <h1>Анализ защищенности информационных систем и объектов информационной инфраструктуры (Pentest)</h1>
-                <h2>Тестирование внешнего контура, тестирование информационной инфраструктуры, тестирование безопасности функционирования приложений (стендовое тестирование, в реальных условиях), Red Team</h2>
-            </div>
     </header>
-    <section>
+    <section class="about-us">
+        <div class="bg-dark"></div>
         <div class="container">
-
+            <div class="header-content">
+                <h1>Анализ защищенности</h1>
+                <h2>Нашими специалистами реализуется комплекс работ по оценке эффективности защищенности информационных систем, включающий анализ на предмет наличия уязвимостей, а также тестирование на проникновение (pentest)</h2>
+            </div>
         </div>
     </section>
+    <section>
+        <div class="container">
+            <div class="about-vlnb">
+                <div class="vlnb-image"></div>
+                <div class="vlnb-discr">
+                    <h3>Сканирование сети на наличие уязвимостей</h3>
+                    <p>С помощью специализированного программного обеспечения осуществляется активное сканирование инфраструктуры на наличие ошибочных конфигураций, открытых портов, сервисов и протоколов, вредоносных кодов, обновления ПО. Под анализ попадают все компоненты инфраструктуры (опционально), включая сети, операционные системы, базы данных и web-приложения. По результатам сканирования наши специалисты предоставят отчет, а также рекомендации по устранению уязвимостей.</p>
+                    <a href="">Подробнее</a>
+                </div>
+            </div>
+            <div class="about-pentest">
+                <div class="pentest-image"></div>
+                <div class="pentest-discr">
+                    <h3>Тестирование на проникновение (pentest)</h3>
+                    <p>Осуществление активного поиска и эксплуатации уязвимостей в информационных системах и системе защиты информации организации путем имитации атаки злоумышленника.</p>
+                    <a href="./pentest.html">Подробнее</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="matrix">
+        <canvas id="q">CodeBreakers - pentesting team</canvas>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="contact-us">
+                <h4>О нас</h4>
+                <p>ООО "ХимНефтеСервис"</p>
+                <a href="tel:+375291303171">+375(29)130-31-71</a>
+                <a href="mailto:pentest@gmail.com">pentest@gmail.com</a>
+            </div>
+        </div>
+    </footer>
     <script src="./build/js/main.min.js"></script>
 </body>
 </html>
