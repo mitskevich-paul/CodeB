@@ -57,6 +57,22 @@
             </div>
         </div>
     </section>
+    <section class="call-back">
+        <div class="call-back-img"></div>
+        <div class="container">
+                <p class="text-call-back">Вы можете оставить заявку и мы обязательно перезвоним!</p>
+            <div class="form-call-back">
+                <form class="sending-email" method="POST" enctype="multipart/form-data" action="./backend/mail.php">
+                    <label for="">Вас зовут:</label>
+                    <input placeholder="Имя" name="clientName" class="input-name" type="text">
+                    <label class="infWindw" for="">Ваш номер телефона:</label>
+                    <input placeholder="375441112233" name="clientPhone" class="input-number" type="text">
+                    <input value="Список пустой, перезвонить клиенту" style="display: none;" name="order" class="hide-input-for-submit" type="text">
+                    <input class="submit" type="submit">
+                </form>
+            </div>
+        </div>
+    </section>
     <section class="matrix">
         <canvas id="q">CodeBreakers - pentesting team</canvas>
     </section>
@@ -68,6 +84,7 @@
                 <a href="tel:+375291303171">+375(29)130-31-71</a>
                 <a href="mailto:pentest@gmail.com">pentest@gmail.com</a>
             </div>
+            <a href="" class="personal-data">Политика в области обработки и защиты персональных данных</a>
         </div>
     </footer>
     <script src="./build/js/main.min.js"></script>
