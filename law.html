@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./build/img/logo-icon-compr.png" type="image/x-icon">
+    <link rel="stylesheet" href="./build/css/style.min.css">
+    <title>BelPentest</title>
+</head>
+<body>
+    <div class="loader">
+        <div class="loaderBg"></div>
+        <div class="loaderBgColor"></div>
+        <div class="loaderBgRed"></div>
+        <div class="loaderBgImg"></div>
+    </div>
+    <header>
+        <div class="mainMenu">
+            <div class="container">
+                <div class="mainMenuPrtLeft">
+                    <a href="./index.html" class="mainMenuIcon"></a>
+                    <p class="TeamName">BelPentest</p>
+                    <div class="menuLogoOpen"></div>
+                </div>
+                <div class="mainMenuPrtRight">
+                    <a class="mainNumber" href="tel:+375291303171">+375(29)130-31-71</a>
+                    <a class="mainMail" href="mailto:info@BelPentest.by">info@BelPentest.by</a>
+                    <p class="translate">RU</p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="about-us">
+        <div class="bg-dark"></div>
+            <div class="header-content">
+                <div class="container">
+                <div class="navi">
+                    <a href="./index.html">Главная</a>
+                    <span> — </span>
+                    <a href="./law.html">НПА</a>
+                </div>
+                <h1>BelPentest.by</h1>
+                <h2>На странице приведены нормативные правовые акты в области кибербезопасности</h2>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <a target="law1" href="./build/doc/2023-40.pdf" class="law-item">Указ Президента Республики Беларусь от 14 февраля 2023 № 40 "О кибербезопасности"</a>
+            <a target="law2" href="./build/doc/2024-120.pdf" class="law-item">Постановление Совета Министров Республики Беларусь от 23 февраля 2024 г. № 120 "О мерах по реализации Указа Президента Республики Беларусь от 14 февраля  2023 г. № 40"</a>
+            <a target="law3" href="./build/doc/2023-130.pdf" class="law-item">Приказ Оперативно-аналитического центра при Президенте Республики Беларусь от 25 июля 2023 г. № 130 "О мерах по реализации Указа Президента Республики Беларусь от 14 февраля 2023 г. № 40"</a>
+        </div>
+    </section>
+    <section style="display: none;" class="call-back">
+        <!-- <div class="call-back-img"></div> -->
+        <div class="container">
+                <p class="text-call-back">Вы можете оставить заявку и мы обязательно перезвоним!</p>
+            <div class="form-call-back">
+                <form class="sending-email" method="POST" enctype="multipart/form-data" action="./backend/mail.php">
+                    <label for="">Вас зовут:</label>
+                    <input placeholder="Имя" name="clientName" class="input-name" type="text">
+                    <label class="infWindw" for="">Ваш номер телефона:</label>
+                    <input placeholder="375441112233" name="clientPhone" class="input-number" type="text">
+                    <input value="Список пустой, перезвонить клиенту" style="display: none;" name="order" class="hide-input-for-submit" type="text">
+                    <input class="submit" type="submit">
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="matrix">
+        <canvas id="q">BelPentest.by - pentesting team</canvas>
+    </section>
+    <footer style="margin-top: 20px;">
+        <div class="container">
+            <div class="contact-us">
+                <h4>О нас</h4>
+                <p>ООО "ХимНефтеСервис"</p>
+                <a href="tel:+375291303171">+375(29)130-31-71</a>
+                <a class="mainMail" href="mailto:info@BelPentest.by">info@BelPentest.by</a>
+            </div>
+            <a href="" class="personal-data">Политика в области обработки и защиты персональных данных</a>
+        </div>
+    </footer>
+    <script src="./build/js/main.min.js"></script>
+</body>
+</html>
